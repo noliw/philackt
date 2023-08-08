@@ -1,6 +1,5 @@
 fun main() {
-    val uInput = readLine()
-    var age = uInput?.toInt()
+    val age = readlnOrNull()?.toInt()
     if (age != null) {
         if (age in 0..17){
             println("You are still a child!")
