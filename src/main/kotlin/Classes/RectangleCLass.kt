@@ -1,3 +1,5 @@
+package Classes
+
 class Rectangle( // constructor is used to specify the values we need to create a class
     val a: Double,
     val b: Double
