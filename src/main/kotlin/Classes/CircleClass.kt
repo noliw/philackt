@@ -2,14 +2,15 @@ package Classes
 
 import kotlin.math.pow
 
-class Circle (
+class Circle(
     val radius: Double,
-) {
+) : Shape("Circle") {
     val pi = 3.141592
+
     init {
-        println("Circle created with radius is $radius")
-        println("Circle area is ${area()}")
-        println("Circle perimeter is ${perimeter()}")
+        println("$name created with radius is $radius")
+        println("$name area is ${area()}")
+        println("$name perimeter is ${perimeter()}")
     }
 
     fun area() = radius.pow(2) * pi
